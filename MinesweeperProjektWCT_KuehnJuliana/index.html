@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Minesweeper 8-Bit Version</title>
+<link rel="stylesheet" href="css/pixelstyle.css">
+</head>
+
+<body>
+    <h1>Minesweeper 8-Bit Version</h1>
+
+    <div id="setupContainer">
+        <p id="instruction">A classic Minesweeper game - but in a 8-bit mario style<br><br>
+        You know the rules? Ok nice<br>
+        Then please select the number of rows and columns you want</p>
+        <p id="errorMsg">""</p>
+        <p id="userInput">
+            <label for="nrRows">ROWS:</label><br>
+            <input type="number" id="nrRows" name="ROWS" min="8" max="32" placeholder="ENTER" required><br>
+
+            <label for="nrCols">COLUMNS:</label><br>
+            <input type="number" id="nrCols" name="COLUMNS" min="8" max="32" placeholder="ENTER" required><br>
+
+            <label for="nrMines">MINES:</label><br>
+            <input type="number" id="nrMines" name="MINES" min="5" max="200" placeholder="ENTER" required><br>
+
+            <input type="button" id="startButton" onclick="checkUserInput()" value="Start!">
+        </p>
+    </div>
+
+    <div id="minefield">
+        <div id="tableContainer">
+            <div id="winMsg">
+                <p id="win"></p>
+            </div>
+            <div id="gameOverMsg">
+                <p id="gameOver"></p>
+            </div>
+        </div>
+        <p id="timer">TIMER: 000</p>
+        <img src="css/images/bomb.png" id="bombImg" alt="bomb icon">
+        <p id="countBombs"> - left: </p>
+        <input type="button" id="flagButton" onclick="flagMode()" value="STAR-MODE"><br>
+        <input type="button" id="debugButton" onclick="debugMode()" value="DEBUG"><br>
+        <input type="button" id="resetButton" onclick="backToBegin()" value="RESET"><br>
+    </div>
+
+</body>
+<script src="pixelsweeper.js"></script>
+
+
+
+</html>

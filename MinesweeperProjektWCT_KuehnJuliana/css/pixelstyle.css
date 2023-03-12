@@ -1,0 +1,187 @@
+body {
+    background-image: url("images/pixelBG.jpg");
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "Arcade Classic Regular";
+    src: url("fonts/arcadeclassic.regular.ttf");
+}
+
+h1 {
+    font-family: Arcade Classic Regular;
+    text-align: center;
+    color: rgb(254, 250, 250);
+    font-size: 60px;
+    letter-spacing: 5pt;
+}
+
+#setupContainer  {
+    display: block;
+    font-family: Arcade Classic Regular;
+    background: rgba(189, 120, 50, 0.9);
+    border: 2px solid rgb(6, 6, 6);
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    color: rgb(254, 250, 250);
+    letter-spacing: 3pt;
+    font-size: 30px;
+}
+
+input[type=number] {
+    font-family: Arcade Classic Regular;
+    font-size: 25px;
+    width: 40%;
+    padding: 7px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px  solid rgb(10, 10, 10);
+    border-radius: 4px;
+}
+
+input[type=button] {
+    font-family: Arcade Classic Regular;
+    font-size: 30px;
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 4px;
+}
+
+#errorMsg {
+    letter-spacing: 4pt;
+    text-align: center;
+    height: 100px;
+    width: 400px;
+    padding: 50px;
+    padding-bottom: 70px;
+    background-color: rgb(0, 0, 0);
+    display: none;
+}
+
+#minefield  {
+    display: none;
+    font-family: Arcade Classic Regular;
+    font-size: 30px;
+}
+
+#timer {
+    color: white;
+    position: static;
+    margin: -400px 0 0 300px;
+}
+
+#countBombs {
+    color: white;
+    position: static;
+    margin: -35px 0 0 350px;
+    z-index: 20;
+}
+
+#bombImg {
+    max-width: 25px;
+    position: static;
+    margin: 15px 0 0 300px;
+    z-index: 10;
+}
+
+#flagButton {
+    position: static;
+    width: 200px;
+    margin: 50px 0 0 300px;
+}
+
+#debugButton {
+    width: 200px;
+    position: static;
+    margin: 70px 0 0 300px;
+}
+
+#resetButton {
+    width: 200px;
+    position: static;
+    margin: 10px 0 0 300px;
+}
+
+#tableContainer {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    background-color: rgba(162, 106, 39, 0.9);
+    position: relative;
+    table-layout: fixed;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding: 7px;
+    border-spacing: 4px;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    background-image: url("images/block.png");
+    background-size: cover;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.basicField {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.bombStyle {
+    background-image: url("images/openBlock.jpg");
+    background-size: cover;
+    background-image: url("images/BombBlock.png");
+    background-size: cover;
+}
+
+#winMsg {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    margin-top: 100px;
+    font-family: Arcade Classic Regular;
+    font-size: 30px;
+    letter-spacing: 4pt;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 400px;
+    padding: 50px;
+    padding-bottom: 70px;
+    background-color: black;
+    border: 3px solid yellow;
+    border-radius: 4px;
+}
+
+#gameOverMsg {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    margin-top: 100px;
+    font-family: Arcade Classic Regular;
+    font-size: 30px;
+    letter-spacing: 4pt;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 400px;
+    padding: 50px;
+    padding-bottom: 70px;
+    background-color: black;
+    border: 3px solid red;
+    border-radius: 4px;
+}
+
+
